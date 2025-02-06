@@ -1,0 +1,16 @@
+@if (pokemon) {
+
+<div class="pokemon-details">
+    <h1>{{ pokemon.name }}</h1>
+    <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" />
+
+    <div class="pokemon-info">
+        <p><strong>Type:</strong> {{ pokemon.types }}</p>
+        <p><strong>Height:</strong> {{ pokemon.height }} m</p>
+        <p><strong>Weight:</strong> {{ pokemon.weight }} kg</p>
+        <p><strong>Abilities:</strong> {{ pokemon.abilities.join(', ') }}</p>
+        <p><strong>Base Experience:</strong> {{ pokemon.base_experience }}</p>
+    </div>
+</div>
+
+}
